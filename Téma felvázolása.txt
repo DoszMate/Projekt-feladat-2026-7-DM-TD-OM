@@ -1,0 +1,30 @@
+Jó napot kívánunk!
+
+A Bajai SZC Kalocsai Dózsa György Technikum és Kollégium 13.C-s osztály tanululói vagyunk.
+
+Doszpod Máté, Tapolcsányi Dorottya és Orsós Martin.
+
+Napjainkban az egészséges életmód, a rendszeres testmozgás és a tudatos táplálkozás iránti igény rohamosan növekszik. 
+A személyi edzők és táplálkozási tanácsadók munkája felértékelődött, azonban a hagyományos, személyes vagy e-mailes kapcsolattartáson alapuló ügyfélkezelés és tartalomértékesítés hosszú távon nehezen kivitelezhető. Az edzők ideje véges, a manuális adminisztráció, mint a dokumentumok küldözgetése és a számlázás rengeteg produktív időt vesz el a szakmai munkától.
+
+A projekt témájának indoklását ez a piaci rés és a digitalizációs igény adja.
+Szükség van egy olyan platformra, amely függetleníti az személyiedző idejét az értékesítési folyamattól.
+A projekt célja egy olyan komplex, online webshop fejlesztése, amely kifejezetten 
+egy személyi edző számára készült digitális termékek automatizált értékesítését teszi lehetővé, 
+úgymint személyre szabott vagy előre elkészített edzéstervek, receptek és étrendek.
+
+A szoftver segítségével a vásárlók gyorsan, közvetlenül a weboldalon keresztül juthatnak hozzá a kiválasztott digitális tartalmakhoz 
+a nap 24 órájában.
+A modern szoftverfejlesztési követelményeknek megfelelően a rendszer kiemelt funkciója 
+az automatizáció és a külső rendszerekkel való biztonságos kommunikáció.
+
+A vásárlási folyamat gördülékenységét és a jogszabályi megfelelőséget a Számlázz.hu rendszerével való API-szintű integráció biztosítja.
+Ez a modul a sikeres fizetési tranzakciót követően emberi beavatkozás nélkül, 
+azonnal előállítja és kiküldi a hivatalos elektronikus számlát a vásárlónak.
+
+Technikus projektmunka révén a fejlesztés során nemcsak a működő funkciók lefejlesztésére, 
+hanem a rendszerszemléletű tervezésre, a tiszta kód alapelvekre, 
+valamint a szoftver alapos manuális és automatizált tesztelésére is nagy hangsúlyt fektettünk, 
+biztosítva a platform stabilitását és biztonságát.
+
+Alma
