@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "A webszerver backend-je",
+  "keywords": [
+    "edzés",
+    "fitness",
+    "power-building"
+  ],
+  "homepage": "https://github.com/DoszMate/Projekt-feladat-2026-7-DM-TD-OM#readme",
+  "bugs": {
+    "url": "https://github.com/DoszMate/Projekt-feladat-2026-7-DM-TD-OM/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoszMate/Projekt-feladat-2026-7-DM-TD-OM.git"
+  },
+  "license": "ISC",
+  "author": "Doszpod Máté, Tapolcsányi Dorottya, Orsós Martin",
+  "type": "commonjs",
+  "main": "szerver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node szerver.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
