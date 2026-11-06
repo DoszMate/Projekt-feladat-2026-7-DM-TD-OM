@@ -1,11 +1,13 @@
 /* Fejléc */
 /* Navigáció elemei */
-#logoKep {
-    width: 80px;
-}
-
 #navSzin {
     background-color: rgb(176, 175, 175);
+
+    position: relative;
+}
+
+#logoKep {
+    width: 80px;
 }
 
 #aktivNavGomb {
@@ -16,6 +18,13 @@
     width: 45px;
 }
 
+/* Videó és szöveget tartalmazó doboz */
+#videoTarolo {
+    position: relative;
+    width: 100%;
+    min-height: 800px;
+}
+
 /* Videó formázása */
 .bg-video {
   position: absolute;
@@ -24,7 +33,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: 0;
 }
 
 /* Üdvözöllek szöveg */

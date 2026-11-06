@@ -1,62 +1,89 @@
 <router-outlet>
+    <!-- Navigáció -->
     <nav class="navbar navbar-expand-lg" id="navSzin">
         <div class="container-fluid d-flex align-items-center justify-content-between">
 
+            <!-- Logo és főoldal-->
             <div class="d-flex align-items-center">
                 <img src="logo.jpg" alt="Logo" id="logoKep" class="me-4">
                 <a class="navbar-brand active text-primary-emphasis px-3 rounded" id="aktivNavGomb" href="#">WebFit</a>
             </div>
     
             <div class="d-flex align-items-center order-lg-last">
-                <a class="nav-link me-4" href="#">
-                    <img src="kosar.png" alt="Kosár" id="kosar">
-                </a>
-    
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Hamburger menü gombja-->
+                <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Navigáció megnyitása">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
             </div>
             
+            <!-- Összecsukandó navigációs elemek -->
             <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+
                 <ul class="navbar-nav align-items-center me-lg-4">
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">Rendeléseim</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">Csomagok</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">Vélemények</a>
                     </li>
+
+                    <li>
+                        <a class="nav-link me-1 me-lg-4 " href="#">
+                            <!-- Kosár icon -->
+                            <img src="kosar.png" alt="Kosár" id="kosar">
+                        </a>
+                    </li>
+
                 </ul>
             </div>
+
         </div>
     </nav>
 
-    <div class="w-100" vh-100 style="min-height: 800px;">
+    <div id="videoTarolo">
+
         <!-- Promo videó autoplay-->
-        <video muted loop playsinline class="bg-video w-100 h-100 object-fit-cover position-absolute position-md-relative top-lg-0 start-lg-0">
+        <video muted loop  playsinline class="bg-video">
             <source src="21.mp4" type="video/mp4">
         </video>
 
         <!-- Szöveg tároló -->
-        <div class=" position-absolute position-md-relative  
+        <div class="position-absolute
         top-0 start-0 w-100 h-100 d-flex 
         flex-column justify-content-center">
 
             <!-- Üdvözöllek szöveg -->
             <h1 class="ms-0 ms-lg-5 mb-4 mb-lg-5 
-            align-self-start align-self-lg-start 
-            text-lg-start
+            align-self-center 
+            text-center
+            align-self-lg-start 
+            text-lg-start 
+            text-primary
             " id="udvozollek">
                 <b>Üdvözöllek <br> a WebFit oldalán!</b>
             </h1>
 
             <!-- Promo szöveg -->
             <h2 class="me-0 me-lg-5 mt-4 mt-lg-5 
-            align-self-center align-self-lg-end 
-            text-center text-lg-end" id="promo">
+            align-self-center 
+            text-center 
+            align-self-lg-end 
+            text-lg-end 
+            text-primary" 
+            id="promo">
                 Ez a promo szöveg!<br>
                 Gyere edz nálam, tölsd ki a <a href="#kerdoiv">kérdőivet</a>!
             </h2>
@@ -103,27 +130,49 @@
     </div>
 
     <div>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div id="sikersztorik" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
+
                 <div class="carousel-item active">
-                    <img src="" class="d-block w-100" alt="...">
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <img src="carausel kep1.jpg" class="d-block w-100 carousel-kep" alt="siker1">
+                        </div>
+                        <div class="col-4">
+                            <img src="carousel kep2.jpg" class="d-block w-100 carousel-kep" alt="siker2">
+                        </div>
+                        <div class="col-4">
+                            <img src="carousel kep3.jpeg" class="d-block w-100 carousel-kep" alt="siker3">
+                        </div>
+                    </div>
                 </div>
+
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <img src="carousel kep4.jpg" class="d-block w-100 carousel-kep" alt="siker4">
+                        </div>
+                        <div class="col-4">
+                            <img src="carousel kep5.jpg" class="d-block w-100 carousel-kep" alt="siker5">
+                        </div>
+                        <div class="col-4">
+                            <img src="carousel kep6.jpg" class="d-block w-100 carousel-kep" alt="siker6">
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#sikersztorik"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Előző</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+
+            <button class="carousel-control-next" type="button" data-bs-target="#sikersztorik"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Következő</span>
             </button>
         </div>
 
