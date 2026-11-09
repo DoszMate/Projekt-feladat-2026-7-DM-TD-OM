@@ -9,19 +9,16 @@
                 <a class="navbar-brand active text-primary-emphasis px-3 rounded" id="aktivNavGomb" href="#">WebFit</a>
             </div>
     
-            <div class="d-flex align-items-center order-lg-last">
-                <!-- Hamburger menü gombja-->
-                <button class="navbar-toggler" 
-                    type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" 
-                    aria-expanded="false" 
-                    aria-label="Navigáció megnyitása">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-            </div>
+            <!-- Hamburger menü gombja-->
+            <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Navigáció megnyitása">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             
             <!-- Összecsukandó navigációs elemek -->
             <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
@@ -55,79 +52,114 @@
 
     <div id="videoTarolo">
 
-        <!-- Promo videó autoplay-->
-        <video muted loop  playsinline class="bg-video">
+        <!-- Promo videó autoplay -->
+        <video muted loop playsinline class="bg-video">
             <source src="21.mp4" type="video/mp4">
         </video>
 
-        <!-- Szöveg tároló -->
-        <div class="position-absolute
-        top-0 start-0 w-100 h-100 d-flex 
-        flex-column justify-content-center">
+        <!-- Nagy képernyőn szövegek a videón tároló -->
+        <div class="position-absolute top-0 start-0 
+            w-100 h-100 d-none d-lg-flex
+            flex-column justify-content-center">
+        
+            <!-- Üdvözlő szöveg -->
+            <h1 class="ms-0 ms-lg-5 mb-4 mb-lg-5
+                align-self-start text-start
+                text-primary" id="udvozollek">
+        
+                <b>Üdvözöllek <br> a WebFit oldalán!</b>
+            </h1>
+        
+            <!-- Promo szöveg -->
+            <h2 class="me-0 me-lg-5 mt-4 mt-lg-5
+                align-self-end text-end
+                text-primary" id="promo">
+        
+                Ez a promo szöveg!<br>
+                Gyere edz nálam, töltsd ki a
+                <a href="#kerdoiv">kérdőívet</a>!
+            </h2>
+        
+        </div>
+        
+        <!-- Kis képernyőn üdvözlő szöveg a videón -->
+        <div class="position-absolute top-0 start-0 w-100 h-100
+            d-lg-none d-flex flex-column justify-content-center
+            align-items-center text-center">
 
-            <!-- Üdvözöllek szöveg -->
-            <h1 class="ms-0 ms-lg-5 mb-4 mb-lg-5 
-            align-self-center 
-            text-center
-            align-self-lg-start 
-            text-lg-start 
-            text-primary
-            " id="udvozollek">
+            <h1 class="text-primary mb-0" id="udvozollekMobil">
                 <b>Üdvözöllek <br> a WebFit oldalán!</b>
             </h1>
 
-            <!-- Promo szöveg -->
-            <h2 class="me-0 me-lg-5 mt-4 mt-lg-5 
-            align-self-center 
-            text-center 
-            align-self-lg-end 
-            text-lg-end 
-            text-primary" 
-            id="promo">
-                Ez a promo szöveg!<br>
-                Gyere edz nálam, tölsd ki a <a href="#kerdoiv">kérdőivet</a>!
-            </h2>
-
         </div>
     </div>
 
-    <h3 class="text-center mb-4">
-        Bemutatkozó szöveg
-    </h3>
+    <!-- Kis képernyőn promo szöveg a videó alatt -->
+    <div class="d-lg-none text-center mt-2">
 
-    <div class="d-flex ms-3">
-        <div class="justify-content-center"  style="max-width: 50%; margin-left: 15%; text-align: justify; min-height: 600px;">
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since 1966, 
-                when designers at Letraset and James Mosley, the librarian at St Bride Printing 
-                Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.
-            </p>
+        <h2 class="text-primary" id="promoMobil">
+            Ez a promo szöveg!<br>
+            Gyere, eddz nálam, töltsd ki a
+            <a href="#kerdoiv">kérdőívet</a>!
+        </h2>
 
-            <p>
-                It has survived not only many decades, but also the leap into electronic typesetting, 
-                remaining essentially unchanged. It was popularised thanks to these sheets 
-                and more recently with desktop publishing software like Aldus PageMaker 
-                and Microsoft Word including versions of Lorem Ipsum.
-            </p>
+    </div>
+        
+    <!-- Bemutatkozó rész -->
+    <div class="container-fluid mb-4">
 
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since 1966, 
-                when designers at Letraset and James Mosley, the librarian at St Bride Printing 
-                Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.
-            </p>
+        <h3 class="text-center mt-4 mb-4">
+            Bemutatkozó szöveg
+        </h3>
 
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since 1966, 
-                when designers at Letraset and James Mosley, the librarian at St Bride Printing 
-                Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.
-            </p>
+        <div class="row justify-content-center">
+
+            <!-- Bemutatkozó szöveg -->
+            <div class="col-12 col-lg-7 mb-0 mb-lg-2" style="text-align: justify;">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since 1966,
+                    when designers at Letraset and James Mosley, the librarian at St Bride Printing
+                    Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.
+                </p>
+
+                <p>
+                    It has survived not only many decades, but also the leap into electronic typesetting,
+                    remaining essentially unchanged. It was popularised thanks to these sheets
+                    and more recently with desktop publishing software like Aldus PageMaker
+                    and Microsoft Word including versions of Lorem Ipsum.
+                </p>
+
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since 1966,
+                    when designers at Letraset and James Mosley, the librarian at St Bride Printing
+                    Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.
+                </p>
+
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since 1966,
+                    when designers at Letraset and James Mosley, the librarian at St Bride Printing
+                    Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.
+                </p>
+            </div>
+
+            <div class="col-8 col-lg-4 text-center">
+                <img src="images.jpg"
+                    alt="Bemutatkozó kép"
+                    class="img-fluid">
+
+            </div>
+
         </div>
 
-        <img class="align-items-end ms-5" style="max-height: 602px; width: 500px;" src="images.jpg" alt="A portré helye">
     </div>
+
+
+
+
+
 
     <div>
         <div id="sikersztorik" class="carousel slide" data-bs-ride="carousel">
@@ -136,7 +168,7 @@
                 <div class="carousel-item active">
                     <div class="row text-center">
                         <div class="col-4">
-                            <img src="carausel kep1.jpg" class="d-block w-100 carousel-kep" alt="siker1">
+                            <img src="carousel kep1.jpg" class="d-block w-100 carousel-kep" alt="siker1">
                         </div>
                         <div class="col-4">
                             <img src="carousel kep2.jpg" class="d-block w-100 carousel-kep" alt="siker2">

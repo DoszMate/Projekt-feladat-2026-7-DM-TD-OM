@@ -2,8 +2,6 @@
 /* Navigáció elemei */
 #navSzin {
     background-color: rgb(176, 175, 175);
-
-    position: relative;
 }
 
 #logoKep {
@@ -18,32 +16,29 @@
     width: 45px;
 }
 
-/* Videó és szöveget tartalmazó doboz */
+/* Videó tároló */
 #videoTarolo {
     position: relative;
     width: 100%;
-    min-height: 800px;
+    overflow: hidden;
 }
 
 /* Videó formázása */
 .bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
+    display: block;
+    width: 100%;
+    height: clamp(220px, 100vh, 800px);
+    object-fit: cover;
 }
 
-/* Üdvözöllek szöveg */
+/* Üdvözöllek szöveg*/
 #udvozollek{
     max-width: 35%; 
     font-size: 3rem;
     z-index: 2;
 }
 
-/* Promo szöveg */
+/* Promo szöveg*/
 #promo {
     max-width: 45%;
     font-size: 1.25rem;
