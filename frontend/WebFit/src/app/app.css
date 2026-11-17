@@ -2,6 +2,9 @@
 /* Navigáció elemei */
 #navSzin {
     background-color: rgb(176, 175, 175);
+    top: 0px;
+    z-index: 99999;
+    position: sticky
 }
 
 #logoKep {
@@ -10,10 +13,6 @@
 
 #aktivNavGomb {
     background-color: rgb(77, 153, 219);
-}
-
-#kosar {
-    width: 45px;
 }
 
 /* Videó tároló */
@@ -43,4 +42,24 @@
     max-width: 45%;
     font-size: 1.25rem;
     z-index: 2;
+}
+
+#promokep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Maga a kép formázása */
+#promokep img {
+    border-radius: 12px;
+    border: 3px solid rgb(77, 153, 219); /* Az aktív gombod kék színe */
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Finom kiemelkedés, ha ráviszik az egeret */
+#promokep img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(77, 153, 219, 0.35);
 }
